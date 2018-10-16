@@ -27,5 +27,19 @@ class TextFieldViewController: UIViewController {
 }
 
 extension TextFieldViewController: UITextFieldDelegate {
-    
+    // sự kiện khi gõ vào textfield
+    // return true để gõ textfield
+    // return false thì không gõ được textfield
+    // giá trị truyền vào string trả về chữ cuối cùng mình gõ
+        func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        print(string)
+        return true
+    }
 }
+
+
+
+
+
+
+
